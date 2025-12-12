@@ -1,0 +1,138 @@
+:root {
+    --color-primary: #b3541e;
+    --color-light: #f4d6b8;
+    --color-muted: #cfb798;
+    --bg-card: rgba(43, 26, 26, 0.88);
+    --radius: 16px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/background3.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: var(--color-light);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26, 18, 11, 0.92), rgba(43, 26, 26, 0.85));
+    z-index: -1;
+    backdrop-filter: blur(2px);
+}
+
+.leaderboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: var(--color-muted);
+    margin-bottom: 40px;
+}
+
+.leaderboard-box {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    text-align: center; /* semua isi tabel rata tengah */
+}
+
+.leaderboard-table th {
+    padding: 15px;
+    color: var(--color-primary);
+    font-size: 1.1em;
+    border-bottom: 2px solid rgba(212,165,116,0.3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.leaderboard-table td {
+    padding: 18px 10px;
+    color: var(--color-light);
+    border-bottom: 1px solid rgba(212,165,116,0.15);
+    font-weight: 500;
+}
+
+.leaderboard-table tr {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.leaderboard-table tr:hover {
+    background: rgba(179, 84, 30, 0.1);
+    transform: scale(1.005);
+}
+
+/* Highlight top 3 */
+.leaderboard-table tr:nth-child(1) td {
+    color: gold;
+    font-weight: 700;
+}
+
+.leaderboard-table tr:nth-child(2) td {
+    color: silver;
+    font-weight: 700;
+}
+
+.leaderboard-table tr:nth-child(3) td {
+    color: #cd7f32; /* perunggu */
+    font-weight: 700;
+}
+
+/* Highlight player Nindy */
+.leaderboard-table tr:nth-child(4) {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--color-primary);
+}
+
+.leaderboard-table tr:nth-child(4):hover {
+    background: rgba(255,255,255,0.08);
+}
+
+/* ====== BACK BUTTON ====== */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    padding: 0;
+    border: none;
+    z-index: 10;
+}
+
+.back-btn img {
+    width: 100px;
+    transition: transform 0.2s ease;
+}
+
+.back-btn img:hover {
+    transform: scale(1.05);
+}

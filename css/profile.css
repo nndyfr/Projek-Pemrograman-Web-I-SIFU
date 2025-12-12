@@ -1,0 +1,160 @@
+:root {
+    --primary: #b3541e;
+    --light: #f4d6b8;
+    --muted: #cfb798;
+    --bg-card: rgba(43, 26, 26, 0.88);
+    --radius: 18px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/background3.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: var(--light);
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26,18,11,0.92), rgba(43,26,26,0.88));
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+.profile-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(212,165,116,0.2);
+}
+
+/* Avatar */
+.avatar-box {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+}
+
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(179,84,30,0.4);
+}
+
+.badge {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background: var(--primary);
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* Name */
+.player-name {
+    font-size: 2.4em;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--light), #d4a574);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.player-title {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+/* Stats */
+.stats-box {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 25px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .value {
+    font-size: 2em;
+    font-weight: 700;
+    color: #d4a574;
+}
+
+.stat .label {
+    color: var(--muted);
+    font-size: 0.9em;
+}
+
+/* About */
+.about-box {
+    background: rgba(26,18,11,0.5);
+    padding: 20px;
+    border-radius: var(--radius);
+    border-left: 3px solid var(--primary);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-box h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    color: var(--muted);
+}
+
+/* Edit Button */
+.edit-btn {
+    margin-top: 25px;
+    background: rgba(179,84,30,0.25);
+    color: var(--light);
+    border: 2px solid var(--primary);
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background: rgba(179,84,30,0.4);
+    transform: translateY(-3px);
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+}
+
+.back-btn img {
+    width: 100px;
+    transition: 0.2s;
+}
+
+.back-btn img:hover {
+    transform: scale(1.05);
+}

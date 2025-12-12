@@ -1,0 +1,122 @@
+:root {
+    --color-primary: #b3541e;
+    --color-primary-light: #d46b2a;
+    --color-light: #f4d6b8;
+    --color-muted: #cfb798;
+    --bg-card: rgba(43, 26, 26, 0.85);
+    --radius: 16px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== BACKGROUND ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/background3.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: var(--color-light);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26,18,11,0.92), rgba(43,26,26,0.88));
+    z-index: -1;
+    backdrop-filter: blur(2px);
+}
+
+/* ====== CONTENT ====== */
+.arena-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: var(--color-muted);
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.arena-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* ====== ARENA CARD ====== */
+.arena-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 14px;
+    box-shadow: var(--shadow);
+    border: 2px solid var(--color-primary-light);
+    transition: 0.3s ease;
+    max-width: 280px;          /* batasi ukuran card */
+    margin: 0 auto;    
+}
+
+.arena-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+    border-color: #ff8a3d; /* lebih terang saat hover */
+}
+
+/* GAMBAR ARENA */
+.arena-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain; /* biar tidak kepotong */
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.arena-card h2 {
+    color: var(--color-primary);
+    font-size: 1.4em;
+    margin-bottom: 6px;
+}
+
+.arena-card p {
+    color: var(--color-muted);
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+/* ====== BACK BUTTON ====== */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    padding: 0;
+    border: none;
+    z-index: 10;
+}
+
+.back-btn img {
+    width: 100px;
+    transition: transform 0.2s ease;
+}
+
+.back-btn img:hover {
+    transform: scale(1.05);
+}
