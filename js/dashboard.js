@@ -70,4 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+   
+    document.querySelectorAll('.fill').forEach(bar => {
+        const value = bar.getAttribute('data-value');
+        bar.style.width = value + '%';});
 });

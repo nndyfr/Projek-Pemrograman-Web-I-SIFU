@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     height: 100vh;
     position: relative;
     overflow: hidden;
     background: url('../img/background1.jpg') no-repeat center center;
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
 }
 
 .overlay {
@@ -44,7 +44,7 @@ body {
     font-size: 18px;
     margin-bottom: 40px;
     opacity: 0.9;
-    font-family: 'Pirata One', sans serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .buttons {
@@ -54,26 +54,36 @@ body {
 }
 
 .btn {
-    padding: 12px 30px;
+    padding: 14px 34px;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 12px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.25s ease;
 }
 
 .daftar-btn {
-    background: #e63946;
-    color: white;
+    background: linear-gradient(135deg, #e63f3f, #c92a2a);
+    color: #fff;
+    border: 2px solid #e63f3f;
 }
+
 .daftar-btn:hover {
-    background: #c52533;
+    background: #c92a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 63, 63, 0.4);
 }
 
 .login-btn {
-    background: #1d3557;
-    color: white;
+    background: linear-gradient(135deg, #b3541e, #d46b2a);
+    color: #fff;
+    border: 2px solid #b3541e;
 }
+
 .login-btn:hover {
-    background: #14273d;
+    background: #d46b2a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(179, 84, 30, 0.45);
 }
+
+

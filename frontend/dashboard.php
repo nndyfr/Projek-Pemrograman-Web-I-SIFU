@@ -32,32 +32,37 @@
             <div class="status-bar-group">
                 <div class="status-bar-header">
                     <label><i class="fas fa-star"></i> XP</label>
-                    <span class="value">25%</span>
+                    <span class="value">0%</span>
                 </div>
                 <div class="bar">
-                    <div class="fill xp"></div>
+                    <div class="fill xp" data-value="0"></div>
                 </div>
             </div>
 
             <div class="status-bar-group">
                 <div class="status-bar-header">
                     <label><i class="fas fa-heart"></i> HEALTH</label>
-                    <span class="value">60%</span>
+                    <span class="value">100%</span>
                 </div>
                 <div class="bar">
-                    <div class="fill health"></div>
+                    <div class="fill health" data-value="100"></div>
                 </div>
             </div>
 
             <div class="status-bar-group">
                 <div class="status-bar-header">
                     <label><i class="fas fa-bolt"></i> STAMINA</label>
-                    <span class="value">80%</span>
+                    <span class="value">100%</span>
                 </div>
                 <div class="bar">
-                    <div class="fill stamina"></div>
+                    <div class="fill stamina" data-value="100"></div>
                 </div>
             </div>
+
+            <!-- LOGOUT BUTTON -->
+            <a href="logout.php" class="logout-btn">
+                LOGOUT
+            </a>
         </div>
     </div>
 
@@ -88,54 +93,46 @@
             <h2><i class="fas fa-bars"></i> MAIN MENU</h2>
 
             <div class="menu-grid">
-                <button class="menu-btn">
+                <a href="training_room.php" class="menu-btn">
                     <i class="fas fa-dumbbell"></i>
                     <div class="btn-content">
                         <strong>TRAINING ROOM</strong>
                         <span>Practice techniques & forms</span>
                     </div>
-                </button>
+                </a>
                 
-                <button class="menu-btn">
+                <a href="arena.php" class="menu-btn">
                     <i class="fas fa-crosshairs"></i>
                     <div class="btn-content">
                         <strong>ARENA</strong>
                         <span>Challenge other warriors</span>
                     </div>
-                </button>
+                </a>
 
-                <button class="menu-btn">
+                <a href="leaderboard.php" class="menu-btn">
                     <i class="fas fa-trophy"></i>
                     <div class="btn-content">
                         <strong>LEADERBOARD</strong>
                         <span>Global & friend rankings</span>
                     </div>
-                </button>
+                </a>
                 
-                <button class="menu-btn">
+                <a href="profile.php" class="menu-btn">
                     <i class="fas fa-user-cog"></i>
                     <div class="btn-content">
                         <strong>PROFILE</strong>
                         <span>Customize your warrior</span>
                     </div>
-                </button>
-                
-                <button class="menu-btn">
+                </a>
+            
+                <a href="achievements.php" class="menu-btn">
                     <i class="fas fa-medal"></i>
                     <div class="btn-content">
                         <strong>ACHIEVEMENTS</strong>
                         <span>View your accomplishments</span>
                     </div>
-                </button>
+                </a>
             </div>
-
-            <button class="menu-btn logout">
-                <i class="fas fa-sign-out-alt"></i>
-                <div class="btn-content">
-                    <strong>LOGOUT</strong>
-                    <span>End your training session</span>
-                </div>
-            </button>
         </div>
     </div>
 </div>

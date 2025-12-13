@@ -43,6 +43,7 @@ body::before {
     font-size: 3em;
     margin-bottom: 10px;
     font-weight: 700;
+    color:#b3541e !important;
 }
 
 .subtitle {

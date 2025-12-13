@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SIFU Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
 </head>
 
@@ -15,7 +16,7 @@
     
         <form action="backend/proses_login.php" method="POST" class="login-form">
             <div class="input-group">
-                <label>Email / Username</label>
+                <label>Email or Username</label>
                 <input type="text" name="identifier" placeholder="Enter your email or username" required>
             </div>
 
@@ -24,12 +25,12 @@
                 <input type="password" name="password" placeholder="Enter your password" required>
             </div>
 
-            <button type="submit" class="btn-primary">Masuk</button>
+            <button type="submit" class="btn-primary">Login</button>
         </form>
 
         <p class="to-daftar">
-            Belum punya akun?  
-            <a href="daftar.php">Daftar</a>
+            Don't have an account? 
+            <a href="daftar.php">Sign up</a>
         </p>
     </div>
 </body>
