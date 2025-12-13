@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,6 @@
         <h1 class="page-title">TRAINING ROOM</h1>
         <p class="page-subtitle">Master your combat skills through intense training</p>
 
-        <!-- Level Selection -->
         <div class="level-selection" id="levelSelection">
             <h2 class="levels-title">Select Training Level</h2>
             
@@ -44,7 +43,6 @@
             </div>
         </div>
 
-        <!-- Game Screen -->
         <div class="game-screen" id="gameScreen">
             <div class="game-info">
                 <div class="info-box">
@@ -74,7 +72,6 @@
             </div>
         </div>
 
-        <!-- Result Screen -->
         <div class="result-screen" id="resultScreen">
             <h2 class="result-title" id="resultTitle">Victory!</h2>
             <p class="result-stats" id="resultStats"></p>
@@ -85,7 +82,6 @@
             </div>
         </div>
     </div>
-
     <script src="../js/training_room.js"></script>
 </body>
 </html>

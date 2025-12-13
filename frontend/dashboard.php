@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>SIFU Dashboard</title>
@@ -9,16 +9,13 @@
 </head>
 <body>
     <div class="dashboard-container">
-
-    <!-- LEFT: CHARACTER PANEL -->
-    <div class="character-panel">
-        <div class="avatar-container">
-            <img src="../img/avatar.jpg" class="avatar-img" alt="Avatar">
-        </div>
+        <div class="character-panel">
+            <div class="avatar-container">
+                <img src="../img/avatar.jpg" class="avatar-img" alt="Avatar">
+            </div>
 
         <div class="status-block">
             <h3><i class="fas fa-chart-line"></i> STATUS</h3>
-
             <div class="status-item">
                 <span>AGE</span>
                 <span>20</span>
@@ -59,15 +56,12 @@
                 </div>
             </div>
 
-            <!-- LOGOUT BUTTON -->
             <a href="logout.php" class="logout-btn">
                 LOGOUT
             </a>
         </div>
     </div>
 
-
-    <!-- RIGHT: MAIN CONTENT -->
     <div class="menu-panel">
         <div class="welcome-section">
             <h1>Welcome, Nindy!</h1>

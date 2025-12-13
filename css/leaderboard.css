@@ -64,7 +64,7 @@ body::before {
     width: 100%;
     border-collapse: collapse;
     font-size: 1.1em;
-    text-align: center; /* semua isi tabel rata tengah */
+    text-align: center; 
 }
 
 .leaderboard-table th {
@@ -92,7 +92,6 @@ body::before {
     transform: scale(1.005);
 }
 
-/* Highlight top 3 */
 .leaderboard-table tr:nth-child(1) td {
     color: gold;
     font-weight: 700;
@@ -104,11 +103,10 @@ body::before {
 }
 
 .leaderboard-table tr:nth-child(3) td {
-    color: #cd7f32; /* perunggu */
+    color: #cd7f32; 
     font-weight: 700;
 }
 
-/* Highlight player Nindy */
 .leaderboard-table tr:nth-child(4) {
     background: rgba(255, 255, 255, 0.05);
     border-left: 4px solid var(--color-primary);
@@ -118,7 +116,6 @@ body::before {
     background: rgba(255,255,255,0.08);
 }
 
-/* ====== BACK BUTTON ====== */
 .back-btn {
     position: absolute;
     top: 20px;

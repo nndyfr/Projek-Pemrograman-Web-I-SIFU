@@ -31,7 +31,6 @@ body::before {
     backdrop-filter: blur(2px);
 }
 
-/* ===== BACK BUTTON (POJOK KIRI ATAS) ===== */
 .back-btn {
     position: fixed;
     top: 15px;
@@ -53,7 +52,6 @@ body::before {
     transform: scale(1.08);
 }
 
-/* ===== MAIN PROFILE LAYOUT ===== */
 .profile-layout {
     max-width: 1100px;
     margin: 0 auto;
@@ -64,7 +62,6 @@ body::before {
     align-items: flex-start;
 }
 
-/* ===== LEFT SIDE ===== */
 .profile-left {
     text-align: center;
 }
@@ -94,7 +91,6 @@ body::before {
     object-fit: cover;
 }
 
-/* ===== RIGHT SIDE ===== */
 .profile-right {
     background: rgba(43,26,26,0.6);
     border-radius: var(--radius);
@@ -102,7 +98,6 @@ body::before {
     box-shadow: var(--shadow);
 }
 
-/* ===== STATS ===== */
 .stats-box {
     display: flex;
     flex-direction: column;
@@ -128,7 +123,6 @@ body::before {
     color: var(--primary);
 }
 
-/* ===== AVATAR ===== */
 .avatar-box {
     width: 115px;
     height: 115px;
@@ -145,7 +139,6 @@ body::before {
     object-fit: cover;
 }
 
-/* ===== NAME ===== */
 .player-name {
     font-size: 1.9em;
     font-weight: 700;
@@ -163,7 +156,6 @@ body::before {
     text-align: center;
 }
 
-/* ===== STATS ===== */
 .stats-box {
     display: flex;
     flex-direction: column;
@@ -199,7 +191,6 @@ body::before {
     
 }
 
-/* ===== ABOUT PLAYER (TANPA KOTAK) ===== */
 .about-box {
     margin-top: 20px;
     padding: 0;
@@ -221,10 +212,9 @@ body::before {
     line-height: 1.6;
 }
 
-/* ===== EDIT BUTTON ===== */
 .edit-btn {
     display: flex;          
-    align-items: center;           /* vertical center */
+    align-items: center;          
     justify-content: center; 
     text-decoration: none; 
     margin-top: 16px;

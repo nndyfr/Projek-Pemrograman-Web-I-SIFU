@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <head>
     <meta charset="UTF-8">
@@ -9,14 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<a href="dashboard.php" class="back-btn">
-    <img src="../img/back-icon.png" alt="Back">
-</a>
-
-<div class="profile-layout">
-
-    <!-- LEFT SIDE -->
+    <a href="dashboard.php" class="back-btn">
+        <img src="../img/back-icon.png" alt="Back">
+    </a>
+    
+    <div class="profile-layout">
     <div class="profile-left">
         <h2 class="profile-title">PROFILE</h2>
 
@@ -28,9 +25,7 @@
         <p class="player-title">The Rising Warrior</p>
     </div>
 
-    <!-- RIGHT SIDE -->
     <div class="profile-right">
-
         <div class="stats-box">
             <div class="stat">
                 <span class="label">Experience Points</span>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Leaderboard - SIFU</title>
@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="../css/leaderboard.css">
 </head>
 <body>
-
-<!-- BACK BUTTON -->
-<button class="back-btn" onclick="window.location.href='dashboard.php'">
-    <img src="../img/back-icon.png" alt="Back">
-</button>
-
-<div class="leaderboard-container">
-    <h1 class="title">Global Leaderboard</h1>
-    <p class="subtitle">See how you rank among warriors worldwide.</p>
+    <button class="back-btn" onclick="window.location.href='dashboard.php'">
+        <img src="../img/back-icon.png" alt="Back">
+    </button>
+    
+    <div class="leaderboard-container">
+        <h1 class="title">Global Leaderboard</h1>
+        <p class="subtitle">See how you rank among warriors worldwide.</p>
 
     <div class="leaderboard-box">
         <table class="leaderboard-table">
@@ -55,8 +53,6 @@
             </tbody>
         </table>
     </div>
-
 </div>
-
 </body>
 </html>

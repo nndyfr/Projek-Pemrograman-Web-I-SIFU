@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Achievements - SIFU</title>
@@ -7,34 +7,28 @@
     <link rel="stylesheet" href="../css/achievements.css">
 </head>
 <body>
-
-<!-- BACK -->
-<a href="dashboard.php" class="back-btn">
-    <img src="../img/back-icon.png" alt="Back">
-</a>
-
-<div class="achievement-container">
-
-    <h1 class="page-title">ACHIEVEMENTS</h1>
-    <p class="page-subtitle">Your journey and milestones as a warrior</p>
-
-    <!-- PROGRESS TRACKER -->
-    <div class="progress-tracker">
-        <div class="progress-bar">
-            <div class="progress-fill" style="width: 33%"></div>
-        </div>
-    </div>
-
-    <div class="achievement-grid">
-
-        <!-- UNLOCKED ACHIEVEMENTS -->
-        <div class="achievement-card unlocked">
-            <div class="icon">🏆</div>
-            <div class="info">
-                <h3>First Blood</h3>
-                <p>Complete your first battle</p>
-                <span class="reward">+50 XP</span>
+    <a href="dashboard.php" class="back-btn">
+        <img src="../img/back-icon.png" alt="Back">
+    </a>
+    
+    <div class="achievement-container">
+        <h1 class="page-title">ACHIEVEMENTS</h1>
+        <p class="page-subtitle">Your journey and milestones as a warrior</p>
+        
+        <div class="progress-tracker">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 33%"></div>
             </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card unlocked">
+                <div class="icon">🏆</div>
+                <div class="info">
+                    <h3>First Blood</h3>
+                    <p>Complete your first battle</p>
+                    <span class="reward">+50 XP</span>
+                </div>
         </div>
 
         <div class="achievement-card unlocked">
@@ -46,7 +40,6 @@
             </div>
         </div>
 
-        <!-- LOCKED ACHIEVEMENTS -->
         <div class="achievement-card locked">
             <div class="icon">🔒</div>
             <div class="info">
@@ -82,9 +75,7 @@
                 <span class="reward">+500 XP</span>
             </div>
         </div>
-
     </div>
 </div>
-
 </body>
 </html>

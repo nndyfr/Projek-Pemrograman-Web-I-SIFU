@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Arena - SIFU</title>
@@ -16,28 +16,24 @@
         <p class="subtitle">Each arena offers unique challenges. Train, fight, and master your skills.</p>
         
         <div class="arena-grid">
+            <div class="arena-card">
+                <img src="../img/arena1.png" alt="The Tower">
+                <h2>The Tower</h2>
+                <p>A vertical gauntlet where fighters battle their way upward. Every floor raises the stake testing precision, patience, and raw determination</p>
+            </div>
 
-        <!-- ARENA 1 -->
-        <div class="arena-card">
-            <img src="../img/arena1.png" alt="The Tower">
-            <h2>The Tower</h2>
-            <p>A vertical gauntlet where fighters battle their way upward. Every floor raises the stake testing precision, patience, and raw determination</p>
-        </div>
+            <div class="arena-card">
+                <img src="../img/arena2.png" alt="The Squats">
+                <h2>The Squats</h2>
+                <p>A gritty underground district ruled by gangs. Expect ambushes, close quarters combat, and chaotic multi enemy encounters.</p>
+            </div>
 
-        <!-- ARENA 2 -->
-        <div class="arena-card">
-            <img src="../img/arena2.png" alt="The Squats">
-            <h2>The Squats</h2>
-            <p>A gritty underground district ruled by gangs. Expect ambushes, close quarters combat, and chaotic multi enemy encounters.</p>
-        </div>
-
-        <!-- ARENA 3 -->
-        <div class="arena-card">
-            <img src="../img/arena3.png" alt="The Museum">
-            <h2>The Museum</h2>
-            <p>A mesmerizing maze of art and illusions. Stylish yet deadly perfect for testing agility, awareness, and sharp reflexes.</p>
+            <div class="arena-card">
+                <img src="../img/arena3.png" alt="The Museum">
+                <h2>The Museum</h2>
+                <p>A mesmerizing maze of art and illusions. Stylish yet deadly perfect for testing agility, awareness, and sharp reflexes.</p>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>

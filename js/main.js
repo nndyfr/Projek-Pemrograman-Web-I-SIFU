@@ -6,6 +6,6 @@ form.addEventListener("submit", function(e){
 
     if (pass !== confirm) {
         e.preventDefault();
-        alert("Password dan Konfirmasi Password tidak sama!");
+        alert("Password and Confirm Password are not the same!");
     }
 });

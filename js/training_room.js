@@ -1,4 +1,3 @@
-// Game State
 const gameState = {
     currentLevel: 1,
     completedLevels: [],
@@ -8,7 +7,6 @@ const gameState = {
     totalStamina: 50
 };
 
-// Level Data
 const levelData = {
     1: { name: "Novice", hits: 10, timeLimit: 2000, reward: { xp: 50, health: 10, stamina: 5 } },
     2: { name: "Apprentice", hits: 15, timeLimit: 1800, reward: { xp: 100, health: 15, stamina: 10 } },
@@ -17,7 +15,6 @@ const levelData = {
     5: { name: "Master", hits: 30, timeLimit: 1000, reward: { xp: 300, health: 30, stamina: 25 } }
 };
 
-// Game Session
 let gameSession = {
     hits: 0,
     misses: 0,
@@ -27,11 +24,9 @@ let gameSession = {
     timerInterval: null
 };
 
-// Actions
 const actions = ['PUNCH!', 'KICK!', 'BLOCK!'];
 const actionClasses = ['punch', 'kick', 'block'];
 
-// Initialize levels on page load
 function initializeLevels() {
     document.querySelectorAll('.level-item').forEach((item, index) => {
         const level = index + 1;
@@ -48,7 +43,6 @@ function initializeLevels() {
     });
 }
 
-// Level Selection Event Listeners
 document.querySelectorAll('.level-item').forEach(item => {
     item.addEventListener('click', function() {
         if (this.classList.contains('locked')) {
@@ -61,7 +55,6 @@ document.querySelectorAll('.level-item').forEach(item => {
     });
 });
 
-// Start Game
 function startGame(level) {
     gameState.currentLevel = level;
     gameSession = { 
@@ -85,7 +78,6 @@ function startGame(level) {
     }, 1000);
 }
 
-// Show Next Action
 function showNextAction() {
     if (gameSession.hits >= levelData[gameState.currentLevel].hits) {
         endGame(true);
@@ -106,7 +98,6 @@ function showNextAction() {
     
     gameSession.isWaiting = true;
     
-    // Timer
     const timeLimit = levelData[gameState.currentLevel].timeLimit;
     let timeLeft = timeLimit;
     const timerFill = document.getElementById('timerFill');
@@ -125,7 +116,6 @@ function showNextAction() {
         }
     }, 50);
     
-    // Timeout
     gameSession.timeoutId = setTimeout(() => {
         if (gameSession.isWaiting) {
             missedAction();
@@ -133,7 +123,6 @@ function showNextAction() {
     }, timeLimit);
 }
 
-// Action Button Click
 document.getElementById('actionBtn').addEventListener('click', function() {
     if (!gameSession.isWaiting) return;
     
@@ -154,7 +143,6 @@ document.getElementById('actionBtn').addEventListener('click', function() {
     }, 500);
 });
 
-// Missed Action
 function missedAction() {
     clearTimeout(gameSession.timeoutId);
     clearInterval(gameSession.timerInterval);
@@ -174,7 +162,6 @@ function missedAction() {
     }, 500);
 }
 
-// Update Game UI
 function updateGameUI() {
     document.getElementById('currentHits').textContent = gameSession.hits;
     document.getElementById('missCount').textContent = gameSession.misses;
@@ -184,7 +171,6 @@ function updateGameUI() {
     document.getElementById('dummyHealth').style.width = (100 - progress) + '%';
 }
 
-// End Game
 function endGame(success) {
     clearTimeout(gameSession.timeoutId);
     clearInterval(gameSession.timerInterval);
@@ -207,7 +193,6 @@ function endGame(success) {
         gameState.totalHealth += reward.health;
         gameState.totalStamina += reward.stamina;
         
-        // Add to completed if not already there
         if (!gameState.completedLevels.includes(level)) {
             gameState.completedLevels.push(level);
         }
@@ -218,13 +203,11 @@ function endGame(success) {
             +${reward.xp} XP | +${reward.health} Health | +${reward.stamina} Stamina
         `;
         
-        // Unlock next level ONLY if current level is completed
         const nextLevel = level + 1;
         if (nextLevel <= 5 && gameState.highestUnlockedLevel < nextLevel) {
             gameState.highestUnlockedLevel = nextLevel;
         }
         
-        // Update level display
         initializeLevels();
         
         document.getElementById('nextLevelBtn').style.display = nextLevel <= 5 ? 'inline-block' : 'none';
@@ -237,7 +220,6 @@ function endGame(success) {
     }
 }
 
-// Next Level Button
 document.getElementById('nextLevelBtn').addEventListener('click', function() {
     const nextLevel = gameState.currentLevel + 1;
     if (nextLevel <= 5) {
@@ -246,11 +228,9 @@ document.getElementById('nextLevelBtn').addEventListener('click', function() {
     }
 });
 
-// Back to Menu Button
 document.getElementById('backToMenuBtn').addEventListener('click', function() {
     document.getElementById('resultScreen').classList.remove('active');
     document.getElementById('levelSelection').style.display = 'block';
 });
 
-// Initialize on page load
 initializeLevels();

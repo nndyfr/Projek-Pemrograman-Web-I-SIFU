@@ -8,7 +8,6 @@
     --shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +32,6 @@ body::before {
     z-index: -1;
 }
 
-/* BACK BUTTON */
 .back-btn {
     position: fixed;
     top: 15px;
@@ -51,7 +49,6 @@ body::before {
     filter: brightness(1.1);
 }
 
-/* MAIN LAYOUT */
 .edit-profile-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -62,7 +59,6 @@ body::before {
     align-items: flex-start;
 }
 
-/* LEFT */
 .left-panel {
     text-align: center;
 }
@@ -91,7 +87,6 @@ body::before {
     object-fit: cover;
 }
 
-/* RIGHT */
 .right-panel {
     background: var(--bg-panel);
     padding: 30px;
@@ -128,14 +123,12 @@ body::before {
     border-color: var(--primary);
 }
 
-/* ACTIONS */
 .form-actions {
     display: flex;
     gap: 15px;
     margin-top: 25px;
 }
 
-/* BUTTON SYSTEM */
 .btn {
     flex: 1;
     padding: 10px;
@@ -149,7 +142,6 @@ body::before {
     text-decoration: none;
 }
 
-/* OUTLINE */
 .btn-outline {
     background: transparent;
     border: 2px solid var(--primary);
@@ -162,7 +154,6 @@ body::before {
     box-shadow: 0 4px 14px rgba(179,84,30,.35);
 }
 
-/* PRIMARY */
 .btn-primary {
     background: linear-gradient(135deg, #b3541e, #d46b2a);
     border: none;

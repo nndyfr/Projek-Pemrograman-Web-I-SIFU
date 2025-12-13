@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
 </head>
-
 <body class="login-page">
     <a href="index.html" class="back-btn">
         <img src="../img/back-icon.png" alt="Back">
@@ -24,7 +23,6 @@
                 <label>Password</label>
                 <input type="password" name="password" placeholder="Enter your password" required>
             </div>
-
             <button type="submit" class="btn-primary">Login</button>
         </form>
 
