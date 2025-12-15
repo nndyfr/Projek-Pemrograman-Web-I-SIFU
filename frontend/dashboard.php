@@ -56,9 +56,12 @@
                 </div>
             </div>
 
-            <a href="logout.php" class="logout-btn">
+            <a href="dashboard.php?logout=true"
+                class="logout-btn"
+                onclick="return confirm('Are you sure you want to logout?')">
                 LOGOUT
             </a>
+
         </div>
     </div>
 

@@ -15,7 +15,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -55,11 +55,11 @@ body::before {
 .training-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 30px 40px;
-    height: 100vh;
+    padding: 120px 30px 40px; 
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; 
 }
 
 .page-title {
